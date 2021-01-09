@@ -1,0 +1,23 @@
+version: 0.1
+
+phases:
+  install:
+    commands:
+      - echo Entering install phase...
+      - echo Nothing to do now
+  pre_build:
+    commands:
+      - echo This is a pre build
+
+  build:
+    commands:
+      - echo Build started on `date`
+      - gradle build -x test
+  post_build:
+    commands:
+      - echo Build must be completed
+      - gradle test
+artifacts:
+  type: zip
+  files:
+    - 'build/libs/*.jar'
