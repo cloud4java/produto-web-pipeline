@@ -4,19 +4,19 @@ phases:
   install:
     commands:
       - echo Entering install phase...
-      - echo Nothing to do now
+      chmod +x gradlew
   pre_build:
     commands:
       - echo This is a pre build
-
+      - ./gradlew --version
   build:
     commands:
       - echo Build started on `date`
-      - gradle build -x test
+      - ./gradlew build -x test
   post_build:
     commands:
       - echo Build must be completed
-      - gradle test
+      - ./gradlew test
 artifacts:
   type: zip
   files:
