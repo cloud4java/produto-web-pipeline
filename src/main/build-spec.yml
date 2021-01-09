@@ -4,7 +4,12 @@ phases:
   install:
     commands:
       - echo Entering install phase...
-      chmod +x gradlew
+      - ls -la
+      - chmod +x gradlew
+    runtime-versions:
+      java: corretto11
+#      python: 3.x
+#      ruby: "$MY_RUBY_VAR"
   pre_build:
     commands:
       - echo This is a pre build
