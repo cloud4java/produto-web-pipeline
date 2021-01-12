@@ -1,4 +1,4 @@
-version: 0.2
+version: 0.
 
 phases:
   install:
@@ -8,8 +8,7 @@ phases:
       - chmod +x gradlew
     runtime-versions:
       java: corretto11
-#      python: 3.x
-#      ruby: "$MY_RUBY_VAR"
+
   pre_build:
     commands:
       - echo This is a pre build
