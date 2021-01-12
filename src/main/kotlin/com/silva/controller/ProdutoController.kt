@@ -30,4 +30,6 @@ class ProdutoController {
     fun stub1(): Produto {
         return Produto(1, "Produto 1", 9.90)
     }
+
+
 }

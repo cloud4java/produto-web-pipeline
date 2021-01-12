@@ -1,5 +1,6 @@
 package com.silva
 
+import io.micronaut.http.annotation.Get
 import io.micronaut.runtime.Micronaut.*
 fun main(args: Array<String>) {
 	build()
@@ -7,4 +8,6 @@ fun main(args: Array<String>) {
 		.packages("com.silva")
 		.start()
 }
+
+
 
