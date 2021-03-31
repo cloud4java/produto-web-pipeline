@@ -1,4 +1,6 @@
 micronaut:
+  server:
+    port: 5000
   application:
     name: produtoWebPipeline
 

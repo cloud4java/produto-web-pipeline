@@ -14,7 +14,7 @@ class ProdutoController {
     lateinit var repository: ProdutoRepository
 
     @Post
-    fun create(@Body produto: Produto): Produto{
+    fun create(@Body produto: Produto): Produto {
         return repository.save(produto)
     }
 
@@ -22,10 +22,12 @@ class ProdutoController {
     fun findAll(): List<Produto> {
         return repository.findAll() as List<Produto>
     }
+
     @Get("/stub")
     fun stub(): Produto {
         return Produto(1, "Produto 1", 9.90)
     }
+
     @Get("stub1")
     fun stub1(): Produto {
         return Produto(1, "Produto 1", 9.90)

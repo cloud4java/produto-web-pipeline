@@ -1,5 +1,4 @@
 version: 0.2
-
 phases:
   install:
     commands:
@@ -23,4 +22,5 @@ phases:
 artifacts:
   type: zip
   files:
-    - 'build/libs/*.jar'
+    - 'build/libs/produto-web-pipeline-0.1-all.jar'
+    - appspec.yml

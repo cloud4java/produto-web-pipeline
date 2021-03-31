@@ -1,0 +1,5 @@
+version: 0.0
+os: linux
+files:
+  - source: ./produto-web-pipeline-v2-0.1-all.jar
+    destination: /tmp
