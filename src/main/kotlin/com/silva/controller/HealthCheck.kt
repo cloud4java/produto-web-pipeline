@@ -8,6 +8,6 @@ class HealthCheck {
 
     @Get
     fun health():String{
-        return "I am health"
+        return "I am health V2"
     }
 }
